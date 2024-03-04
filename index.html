@@ -15,7 +15,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 	<link rel="manifest" href="img/favicon/site.webmanifest">
-	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileColor" content="#000000">
 	<meta name="theme-color" content="#ffffff">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/vendor.min.css">
@@ -41,7 +41,136 @@
 		</header>
 		<!-- end of header -->
 		<!-- content -->
-		<div class="wrapper__content"></div>
+		<div class="wrapper__content">
+			<!-- main -->
+			<section class="main" id="main">
+				<div class="container">
+					<div class="main__wrap">
+						<h3 class="main__title">Пластический, эстетический, <br>реконструктивный хирург</h3>
+						<h1 class="main__heading">Клиника Сергея прокудина</h1>
+						<a href="#" class="main__link">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-play"></use>
+							</svg>
+							<span>Смотреть видео</span>
+						</a>
+					</div>
+					<picture class="main__bg">
+						<img src="img/main-bg.jpg" alt="Image">
+					</picture>
+				</div>
+			</section>
+			<!-- end of main -->
+			<!-- stats -->
+			<div class="stats" id="stats">
+				<div class="container">
+					<div class="stats__wrapper">
+						<div class="stats__main">
+							<h2 class="stats__heading">89%</h2>
+							<h3 class="stats__subtitle">положительных отзывов</h3>
+						</div>
+						<div class="stats__logotypes">
+							<picture class="stats__logotype">
+								<img src="img/logo-ya.svg" width="116" height="34" alt="Logotype">
+							</picture>
+							<picture class="stats__logotype">
+								<img src="img/logo-dokty.svg" width="149" height="48" alt="Logotype">
+							</picture>
+							<picture class="stats__logotype">
+								<img src="img/logo-prodoktorov.svg" width="297" height="27" alt="Logotype">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of stats -->
+			<!-- contacts -->
+			<section class="contacts" id="contacts">
+				<div class="container">
+					<div class="contacts__main">
+						<h2 class="contacts__heading">Контакты</h2>
+						<div class="contacts__info">
+							<div class="contacts__elem">
+								<a href="tel:79165140136" class="contacts__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-phone"></use>
+									</svg>
+									<span>+7 916 514-01-36</span>
+								</a>
+								<span class="contacts__help">Личный ассистент доктора Ольга, г. Москва</span>
+							</div>
+							<div class="contacts__elem">
+								<a href="tel:79895375251" class="contacts__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-phone"></use>
+									</svg>
+									<span>+7 989 537-52-51</span>
+								</a>
+								<span class="contacts__help">Личный ассистент доктора Эльмира, г.Ростов</span>
+							</div>
+							<div class="contacts__elem">
+								<a href="905362251013" class="contacts__link">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-phone"></use>
+									</svg>
+									<span>+90 536 225 10 13</span>
+								</a>
+								<span class="contacts__help">Личный ассистент доктора Екатерина </span>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__bottom">
+						<h3 class="contacts__subtitle">Оставьте заявку и мы с вами свяжемся</h3>
+						<form action="#" class="contacts-form contacts__form">
+							<div class="contacts-form__wrapper">
+								<div class="contacts-form__item">
+									<div class="input-field contacts-form__input">
+										<div class="input-field__inner">
+											<input type="text" id="contacts-name" class="input-field__input" placeholder="Имя">
+										</div>
+									</div>
+								</div>
+								<div class="contacts-form__item">
+									<div class="input-field contacts-form__input">
+										<div class="input-field__inner">
+											<input type="tel" id="contacts-name" class="input-field__input" placeholder="Телефон">
+										</div>
+									</div>
+								</div>
+								<div class="contacts-form__item">
+									<div class="input-field contacts-form__input">
+										<div class="input-field__inner">
+											<input type="email" id="contacts-name" class="input-field__input" placeholder="E-mail">
+										</div>
+									</div>
+								</div>
+								<div class="contacts-form__item">
+									<div class="input-field contacts-form__input">
+										<div class="input-field__inner">
+											<input type="text" id="contacts-name" class="input-field__input" placeholder="Ваш город">
+										</div>
+									</div>
+								</div>
+								<div class="contacts-form__item">
+									<button class="contacts-form__btn btn">Отправить запрос</button>
+								</div>
+								<div class="contacts-form__item">
+									<p class="contacts-form__help">
+										Нажимая кнопку «Отправить запрос»,
+										вы соглашаетесь с политикой обработки
+										и хранения персональных данных
+									</p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<picture class="contacts__bg">
+						<img src="img/contacts-bg.jpg" alt="Image">
+					</picture>
+				</div>
+			</section>
+			<!-- end of contacts -->
+		</div>
 		<!-- end of content -->
 		<!-- footer -->
 		<footer class="footer" id="footer">
