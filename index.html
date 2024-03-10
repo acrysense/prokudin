@@ -44,20 +44,23 @@
 		<div class="wrapper__content">
 			<!-- main -->
 			<section class="main" id="main">
-				<div class="container">
-					<div class="main__wrap">
-						<h3 class="main__title">Пластический, эстетический, <br>реконструктивный хирург</h3>
-						<h1 class="main__heading">Клиника Сергея прокудина</h1>
-						<a href="#" class="main__link">
-							<svg>
-								<use xlink:href="img/sprite.svg#icon-play"></use>
-							</svg>
-							<span>Смотреть видео</span>
-						</a>
+				<div class="main__wrap">
+					<div class="container">
+						<div class="main__body">
+							<h3 class="main__title">Пластический, эстетический, <br>реконструктивный хирург</h3>
+							<h1 class="main__heading">Клиника Сергея прокудина</h1>
+							<a href="#" class="main__link">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-play"></use>
+								</svg>
+								<span>Смотреть видео</span>
+							</a>
+						</div>
+						<picture class="main__bg">
+							<source srcset="img/main-bg.jpg" media="(min-width: 768px)">
+							<img src="img/main-bg-mobile.jpg" alt="Image">
+						</picture>
 					</div>
-					<picture class="main__bg">
-						<img src="img/main-bg.jpg" alt="Image">
-					</picture>
 				</div>
 			</section>
 			<!-- end of main -->
@@ -80,7 +83,7 @@
 								</div>
 								<div class="results__group">
 									<a href="#" class="results__link">
-										<span>Открыть КЕЙС</span>
+										<span>Открыть кейс</span>
 										<svg>
 											<use xlink:href="img/sprite.svg#icon-arrow-next"></use>
 										</svg>
@@ -259,33 +262,39 @@
 				<!-- end of reviews -->
 				<!-- about -->
 				<section class="about" id="about">
-					<div class="container">
-						<div class="about__wrap">
-							<div class="about__left">
-								<h3 class="about__subtitle">Обо мне</h3>
-								<h2 class="about__heading">Сергей Прокудин</h2>
-								<p class="about__subtitle">Пластический реконструктивный эстетический хирург</p>
-							</div>
-							<div class="about__right">
-								<div class="about__content">
-									<p>Научный руководитель «Anatomologica»</p>
-									<p>Почетный член SIDE</p>
-									<ul>
-										<li>Член EAFPS </li>
-									</ul>
-									<p>Член ASSECE</p>
-									<ul>
-										<li>Европейская ассоциация эстетической хирургии</li>
-									</ul>
-									<p>Член BAAPS</p>
-									<ul>
-										<li>Британская ассоциация эстетических пластических хирургов</li>
-									</ul>
-									<p>Член EAFPS</p>
-									<ul>
-										<li>Европейская Ассоциация Лицевых Пластических Хирургов</li>
-									</ul>
-									<p>Соавтор анатомического атласа «Anatomie de la face et du cou en chirurgie et cosmétologie» Elsevier – Masson 2015</p>
+					<div class="about__wrap">
+						<div class="container">
+							<div class="about__wrapper">
+								<div class="about__left">
+									<div class="about__group">
+										<h3 class="about__subtitle">Обо мне</h3>
+									</div>
+									<div class="about__group">
+										<h2 class="about__heading">Сергей Прокудин</h2>
+										<p class="about__subtitle">Пластический реконструктивный эстетический хирург</p>
+									</div>
+								</div>
+								<div class="about__right">
+									<div class="about__content">
+										<p>Научный руководитель «Anatomologica»</p>
+										<p>Почетный член SIDE</p>
+										<ul>
+											<li>Член EAFPS </li>
+										</ul>
+										<p>Член ASSECE</p>
+										<ul>
+											<li>Европейская ассоциация эстетической хирургии</li>
+										</ul>
+										<p>Член BAAPS</p>
+										<ul>
+											<li>Британская ассоциация эстетических пластических хирургов</li>
+										</ul>
+										<p>Член EAFPS</p>
+										<ul>
+											<li>Европейская Ассоциация Лицевых Пластических Хирургов</li>
+										</ul>
+										<p>Соавтор анатомического атласа «Anatomie de la face et du cou en chirurgie et cosmétologie» Elsevier – Masson 2015</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -293,7 +302,7 @@
 				</section>
 				<!-- end of about -->
 				<picture class="common__bg">
-					<source srcset="img/about-bg.jpg" media="(min-width: 768px)">
+					<source srcset="img/about-bg.jpg" media="(min-width: 1024px)">
 					<img src="img/about-bg-mobile.jpg" alt="Image">
 				</picture>
 			</div>
@@ -367,87 +376,92 @@
 			<!-- end of operations -->
 			<!-- contacts -->
 			<section class="contacts" id="contacts">
-				<div class="container">
-					<div class="contacts__main">
-						<h2 class="contacts__heading">Контакты</h2>
-						<div class="contacts__info">
-							<div class="contacts__elem">
-								<a href="tel:79165140136" class="contacts__link">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-phone"></use>
-									</svg>
-									<span>+7 916 514-01-36</span>
-								</a>
-								<span class="contacts__help">Личный ассистент доктора Ольга, г. Москва</span>
+				<div class="contacts__wrap">
+					<div class="container">
+						<div class="contacts__wrap-inner">
+							<div class="contacts__main">
+								<h2 class="contacts__heading">Контакты</h2>
+								<div class="contacts__info">
+									<div class="contacts__elem">
+										<a href="tel:79165140136" class="contacts__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-phone"></use>
+											</svg>
+											<span>+7 916 514-01-36</span>
+										</a>
+										<span class="contacts__help">Личный ассистент доктора Ольга, г. Москва</span>
+									</div>
+									<div class="contacts__elem">
+										<a href="tel:79895375251" class="contacts__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-phone"></use>
+											</svg>
+											<span>+7 989 537-52-51</span>
+										</a>
+										<span class="contacts__help">Личный ассистент доктора Эльмира, г.Ростов</span>
+									</div>
+									<div class="contacts__elem">
+										<a href="905362251013" class="contacts__link">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-phone"></use>
+											</svg>
+											<span>+90 536 225 10 13</span>
+										</a>
+										<span class="contacts__help">Личный ассистент доктора Екатерина </span>
+									</div>
+								</div>
 							</div>
-							<div class="contacts__elem">
-								<a href="tel:79895375251" class="contacts__link">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-phone"></use>
-									</svg>
-									<span>+7 989 537-52-51</span>
-								</a>
-								<span class="contacts__help">Личный ассистент доктора Эльмира, г.Ростов</span>
-							</div>
-							<div class="contacts__elem">
-								<a href="905362251013" class="contacts__link">
-									<svg>
-										<use xlink:href="img/sprite.svg#icon-phone"></use>
-									</svg>
-									<span>+90 536 225 10 13</span>
-								</a>
-								<span class="contacts__help">Личный ассистент доктора Екатерина </span>
+							<div class="contacts__bottom">
+								<h3 class="contacts__subtitle">Оставьте заявку и мы с вами свяжемся</h3>
+								<form action="#" class="contacts-form contacts__form">
+									<div class="contacts-form__wrapper">
+										<div class="contacts-form__item">
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="text" id="contacts-name" class="input-field__input" placeholder="Имя">
+												</div>
+											</div>
+										</div>
+										<div class="contacts-form__item">
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="tel" id="contacts-name" class="input-field__input" placeholder="Телефон">
+												</div>
+											</div>
+										</div>
+										<div class="contacts-form__item">
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="email" id="contacts-name" class="input-field__input" placeholder="E-mail">
+												</div>
+											</div>
+										</div>
+										<div class="contacts-form__item">
+											<div class="input-field contacts-form__input">
+												<div class="input-field__inner">
+													<input type="text" id="contacts-name" class="input-field__input" placeholder="Ваш город">
+												</div>
+											</div>
+										</div>
+										<div class="contacts-form__item">
+											<button class="contacts-form__btn btn">Отправить запрос</button>
+										</div>
+										<div class="contacts-form__item">
+											<p class="contacts-form__help">
+												Нажимая кнопку «Отправить запрос»,<br>
+												Вы соглашаетесь с политикой обработки <br>
+												и хранения персональных данных
+											</p>
+										</div>
+									</div>
+								</form>
 							</div>
 						</div>
+						<picture class="contacts__bg">
+							<source srcset="img/contacts-bg.jpg" media="(min-width: 1024px)">
+							<img src="img/contacts-bg-mobile.jpg" alt="Image">
+						</picture>
 					</div>
-					<div class="contacts__bottom">
-						<h3 class="contacts__subtitle">Оставьте заявку и мы с вами свяжемся</h3>
-						<form action="#" class="contacts-form contacts__form">
-							<div class="contacts-form__wrapper">
-								<div class="contacts-form__item">
-									<div class="input-field contacts-form__input">
-										<div class="input-field__inner">
-											<input type="text" id="contacts-name" class="input-field__input" placeholder="Имя">
-										</div>
-									</div>
-								</div>
-								<div class="contacts-form__item">
-									<div class="input-field contacts-form__input">
-										<div class="input-field__inner">
-											<input type="tel" id="contacts-name" class="input-field__input" placeholder="Телефон">
-										</div>
-									</div>
-								</div>
-								<div class="contacts-form__item">
-									<div class="input-field contacts-form__input">
-										<div class="input-field__inner">
-											<input type="email" id="contacts-name" class="input-field__input" placeholder="E-mail">
-										</div>
-									</div>
-								</div>
-								<div class="contacts-form__item">
-									<div class="input-field contacts-form__input">
-										<div class="input-field__inner">
-											<input type="text" id="contacts-name" class="input-field__input" placeholder="Ваш город">
-										</div>
-									</div>
-								</div>
-								<div class="contacts-form__item">
-									<button class="contacts-form__btn btn">Отправить запрос</button>
-								</div>
-								<div class="contacts-form__item">
-									<p class="contacts-form__help">
-										Нажимая кнопку «Отправить запрос»,
-										вы соглашаетесь с политикой обработки
-										и хранения персональных данных
-									</p>
-								</div>
-							</div>
-						</form>
-					</div>
-					<picture class="contacts__bg">
-						<img src="img/contacts-bg.jpg" alt="Image">
-					</picture>
 				</div>
 			</section>
 			<!-- end of contacts -->
