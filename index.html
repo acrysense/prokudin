@@ -679,32 +679,37 @@
 							<div class="contacts__bottom">
 								<h3 class="contacts__subtitle">Оставьте заявку и мы с вами свяжемся</h3>
 								<form action="#" class="contacts-form contacts__form">
+									<!-- hidden required fields -->
+									<input type="hidden" name="project_name" value="produkinpalstic" />
+									<input type="hidden" name="admin_email" value="acrysense@gmail.com" />
+									<input type="hidden" name="form_subject" value="Заявка с сайта produkinpalstic" />
+									<!-- end of hidden required fields -->
 									<div class="contacts-form__wrapper">
 										<div class="contacts-form__item">
 											<div class="input-field contacts-form__input">
 												<div class="input-field__inner">
-													<input type="text" id="contacts-name" class="input-field__input" placeholder="Имя">
+													<input type="text" id="contacts-name" name="Имя" class="input-field__input" placeholder="Имя" required>
 												</div>
 											</div>
 										</div>
 										<div class="contacts-form__item">
 											<div class="input-field contacts-form__input">
 												<div class="input-field__inner">
-													<input type="tel" id="contacts-name" class="input-field__input" placeholder="Телефон">
+													<input type="tel" id="contacts-phone" name="Телефон" class="input-field__input" placeholder="Телефон" data-inputmask="'mask': '+7 (999) 999-99-99'" s required>
 												</div>
 											</div>
 										</div>
 										<div class="contacts-form__item">
 											<div class="input-field contacts-form__input">
 												<div class="input-field__inner">
-													<input type="email" id="contacts-name" class="input-field__input" placeholder="E-mail">
+													<input type="email" id="contacts-email" name="E-mail" class="input-field__input" placeholder="E-mail" required>
 												</div>
 											</div>
 										</div>
 										<div class="contacts-form__item">
 											<div class="input-field contacts-form__input">
 												<div class="input-field__inner">
-													<input type="text" id="contacts-name" class="input-field__input" placeholder="Ваш город">
+													<input type="text" id="contacts-city" name="Ваш город" class="input-field__input" placeholder="Ваш город">
 												</div>
 											</div>
 										</div>
@@ -853,6 +858,27 @@
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		// e-mail ajax send
+		$("form").submit(function() {
+			//Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: th.serialize(),
+			}).done(function() {
+				// done functions
+				th.trigger("reset");
+				var href = $(this).attr('href');
+				$('html, body').animate({
+					scrollTop: $('#main').offset().top
+				}, 'slow');
+			});
+			return false;
+		});
+	</script>
 </body>
 
 </html>
